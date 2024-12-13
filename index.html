@@ -1,7 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo 'Lovin Mundo Mágico'; ?></title>
+    <style>
+        /* Colores principales */
+        :root {
+            --purple: #5b3398;
+            --pink: #c61996;
+            --blue: #14b3dc;
+            --red: #f83a05;
+            --yellow: #facd27;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--purple), var(--pink), var(--blue));
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--yellow);
+            padding: 20px;
+        }
+
+        header h1 {
+            color: var(--red);
+            margin: 0;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid var(--blue);
+        }
+
+        .logo span {
+            color: var(--purple);
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: var(--blue);
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            color: var(--yellow);
+        }
+
+        footer {
+            background-color: var(--purple);
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
-<h1>LOVING MUNDO MÁGICO</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="logo">
+            <span>Logo</span> <!-- Espacio para el logo -->
+        </div>
+        <h1><?php echo 'Lovin Mundo Mágico'; ?></h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#about">Acerca</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="about">
+        <h2>Bienvenidos a Lovin Mundo Mágico</h2>
+        <p>Un lugar donde la magia del aprendizaje y la diversión se unen para crear un mundo lleno de amor y creatividad.</p>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> Lovin Mundo Mágico. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
